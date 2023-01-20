@@ -1,0 +1,30 @@
+<html>
+<!-- Plant monitoring system, Group3 (Jan. 2023)-->
+<!--.html file creating the browser dashboard, including all 4 public thingspeak diagrams and the embedded localhost button-->
+<!-- hint: change line 28 to the IP of the ESP in your network to make the button appear!-->
+	<head>
+		<title>Plant Monitoring Dashboard</title>
+		<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=UEPtBuKkLXOOdGTKuW_awwfgMQqC3hZ4hXCod7SHoIxsuFtLJwNWN8qzpwDPI4Y3VwjY_m1dMIXlwT6ojxfK-vTKJ7HxZcWhVaTGlMXYwkltfBc_CrGarS58j7fg-VBx-Hv-fA9g71676ylKA6rObw" charset="UTF-8"></script></head>
+	<body>
+		<table align = "center" border=10 bordercolor="#006400">
+			<tr><td colspan="2">
+			<h1 align="center" color="#00FFFF">Plant Monitoring Dashboard</h1>
+			</td></tr>
+			<tr><td>
+				<h3 align = "center">Humdity</h3>
+				<iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2009564/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe></td>
+			<td>
+				<h3 align = "center">Humidity (live)</h3>
+				<iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2009564/widgets/587316"></iframe>
+			</td></tr>
+			<tr><td>
+				<h3 align = "center">Lighting conditions</h3>
+				<iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2009564/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+			</td><td>
+				<h3 align = "center">Lighting okay? (yes/ no)</h3>
+				<iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2009564/widgets/587318"></iframe>
+			</td>
+		<div style = "position:relative; left:1100px; top:1100px;">
+			<embed src="http://172.16.13.201/" style="width:500px; height: 300px;"></div>
+	</body>
+</html>
